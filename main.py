@@ -52,7 +52,7 @@ def few_shot_prompt(product_review):
     return response
 
 
-df = pd.read_csv("mobile_phone_reviews.csv")
+df = pd.read_parquet("mobile_phone_reviews.parquet")
 
 for index, row in df.iterrows():
 
